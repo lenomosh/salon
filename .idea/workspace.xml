@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca779c88-3fbb-4d1e-aa19-0db091a5daf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_lighthouse_ide_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/schema.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmatic-types.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema-directives.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/salon-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/salon-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_04_114004_create_business_service_ratings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114004_create_business_service_ratings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_04_114418_create_service_rating_descriptions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114418_create_service_rating_descriptions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_04_114951_create_business_operating_hours_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114951_create_business_operating_hours_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/schema.graphql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +172,7 @@
       <updated>1596539380052</updated>
       <workItem from="1596539388017" duration="7443000" />
       <workItem from="1596547873858" duration="191000" />
-      <workItem from="1596548091428" duration="1412000" />
+      <workItem from="1596548091428" duration="6478000" />
     </task>
     <servers />
   </component>

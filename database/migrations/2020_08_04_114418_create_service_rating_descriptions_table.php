@@ -17,7 +17,7 @@ class CreateServiceRatingDescriptionsTable extends Migration
             $table->id();
             $table->integer('business_service_rating_id');
             $table->longText('description');
-            $table->integer('user_id');
+            $table->integer('customer_id');
             $table->timestamps();
 
         });

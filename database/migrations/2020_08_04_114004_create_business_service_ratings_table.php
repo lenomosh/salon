@@ -17,6 +17,7 @@ class CreateBusinessServiceRatingsTable extends Migration
             $table->id();
             $table->tinyInteger('rating');
             $table->integer('service_id');
+            $table->integer('customer_id');
             $table->timestamps();
         });
     }
