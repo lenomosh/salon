@@ -35,7 +35,7 @@ const WelcomePageNavbar = () => {
               <li className="nav-item">
                 <button class="btn btn-outline-primary" type="button">Sign Up</button>
               </li>
-              <li className="nav-item"><Link className="nav-link" to={"/login"}>Log in</Link></li>
+              <li className="nav-item"><Link className="nav-link" to={"/vendor-login"}>Log in</Link></li>
             </ul>
           </div>
         </div>
