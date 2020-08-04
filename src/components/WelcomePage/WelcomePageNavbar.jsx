@@ -32,7 +32,7 @@ const WelcomePageNavbar = () => {
                 </div>
               </li>
               <li className="nav-item">
-                <button class="btn btn-outline-success" type="button">Sign Up</button>
+                <button class="btn btn-outline-primary" type="button">Sign Up</button>
               </li>
               <li className="nav-item"><a href="#contact" className="nav-link">Log in</a></li>
             </ul>

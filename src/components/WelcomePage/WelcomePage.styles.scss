@@ -7,7 +7,7 @@
   font-weight: 300;
   text-align: center;
   height: 100%;
-  .welcome-navbar{
+  .navbar{
     background-color: #e8206b;
     .navbar-brand{
       font-family: "Josefin Sans", Arial, sans-serif;
@@ -18,6 +18,11 @@
       display: block;
       text-align: center;
       letter-spacing: 4px;
+    }
+    @media only screen and (max-width: 768px){
+      .navbar {
+          background-color:#e8206b;
+      }
     }
   }
   .welcome-page-body{
