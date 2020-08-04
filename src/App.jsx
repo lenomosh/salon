@@ -11,9 +11,11 @@ const App=()=> {
   return (
     <div className="vendor-page">
       <Router>
-        {isLogin?'':<Route path="/" exact component={WelcomePage}/>}
-        <Route path="/vendor-login" component={LoginPage}/>
-        <Route path="/vendor-register" component={RegistrationPage}/>
+        <div className="welcome-main">
+          {isLogin?'':<Route path="/" exact component={WelcomePage}/>}
+          <Route path="/vendor-login" component={LoginPage}/>
+          <Route path="/vendor-register" component={RegistrationPage}/>
+        </div>
         <Route path="/vendor-home" component={HomePage}/>
       </Router>
     </div>
