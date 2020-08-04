@@ -32,7 +32,7 @@ const RegistrationPage=(props)=> {
 
           <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
           <p className="forgot-password text-right">
-            Already registered <Link to={"/vendor-login"}>Log in</Link>
+            Already registered? <Link to={"/vendor-login"}><strong>Log in</strong> </Link>
           </p>
         </form>
       </div>      
