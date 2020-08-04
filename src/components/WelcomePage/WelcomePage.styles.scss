@@ -1,3 +1,24 @@
 .welcome-page{
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  box-sizing: border-box;
+  font-weight: 300;
+  text-align: center;
+  height: 100%;
+  .welcome-navbar{
+    background-color: #e8206b;
+    .navbar-brand{
+      font-family: "Josefin Sans", Arial, sans-serif;
+    }
+    .navbar-brand small{
+      text-transform: uppercase;
+      font-size: 11px;
+      display: block;
+      text-align: center;
+      letter-spacing: 4px;
+    }
+  }
   
 }
