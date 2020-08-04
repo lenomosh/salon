@@ -8,12 +8,15 @@ type Query {
     users: [User!]! @paginate(defaultCount: 10)
     user(id: ID @eq): User @find
 }
+type Mutation{
+    createBusinessServiceType(name:String ):BusinessServiceType! @create
+}
 
 type User {
     id: ID!
     name: String!
     email: String!
-    type_id:Int!
+    type_id:[UserType!]!
     password:String!
     created_at: DateTime!
     updated_at: DateTime!
@@ -22,19 +25,20 @@ type Business {
     id:ID!
     name:String!
     location:String!
-    business_type: [Business!]!
+    business_type: [BusinessType!]! @hasMany
 }
 type BusinessType{
     id:Int!
     name:String!
     create_at:DateTime
     updated_at:DateTime
+    businesses:Business @belongsTo(relation:"Business")
 
 }
 type BusinessImage{
     id:ID!
     path:String
-    business_id:[BusinessType!]!
+    business_id:[Business!]!
     create_at:DateTime
     updated_at:DateTime
 }
@@ -67,7 +71,7 @@ type UserType{
 type ServiceRatingDescription{
     business_service_rating_id:[BusinessServiceRating!]!
     description:String!
-    customer_id:[Customer!]!
+    rating_id:[BusinessServiceRating!]!
 
 }
 enum EOperatingHour {
@@ -113,7 +117,7 @@ type ServiceSlot{
     service_id:[BusinessService!]!
     slots_per_session:Int!
 }
-type ServiceSlotTrscker{
+type ServiceSlotTracker{
     service_id:[BusinessService!]!
     total_slots:Int!
     remaining_slots:Int!
