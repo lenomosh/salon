@@ -33,9 +33,9 @@ const WelcomePageNavbar = () => {
                 </div>
               </li>
               <li className="nav-item">
-                <button class="btn btn-outline-primary" type="button">
-                  <Link className="nav-link" to={"/vendor-register"}>Sign up</Link>
-                </button>
+                <Link className="nav-link" to={"/vendor-register"}>
+                  <button className="btn btn-outline-primary" type="button">Sign up</button>
+                </Link>
               </li>
               <li className="nav-item"><Link className="nav-link" to={"/vendor-login"}>Log in</Link></li>
             </ul>

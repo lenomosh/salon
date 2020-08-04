@@ -1,6 +1,7 @@
 import React from 'react'
 import './WelcomePage.styles.scss'
 import WelcomeNavbar from './WelcomePageNavbar'
+import {Link} from 'react-router-dom'
 
 const WelcomePage = () => {
   return (
@@ -10,7 +11,9 @@ const WelcomePage = () => {
         <div className="banner">
           <h1 className="animate__animated animate__bounce animate__slow animate__infinite">Welcome To Urembo Salons</h1>
           <p className="d-lg-4">Every salon deserves the perfect tools for the job. Focus on your clients, not your admin,<br/> with features and services designed around you.</p>
-          <button type="button" class="btn btn-primary">Partner With Us</button>
+          <Link to={"/vendor-register"}>
+            <button type="button" class="btn btn-primary">Partner With Us</button>
+          </Link>
         </div>
       </div>
     </div>

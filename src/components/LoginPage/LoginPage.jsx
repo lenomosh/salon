@@ -29,7 +29,7 @@ const LoginPage=(props)=> {
 
           <button type="submit" className="btn btn-primary btn-block">Login</button>
           <Link to={"/vendor-register"}>
-          <button className="btn btn-primary btn-block mt-2" type="button">Sign up</button>
+            <button className="btn btn-primary btn-block mt-2" type="button">Sign up</button>
           </Link>
           <p className="forgot-password text-right">
             Forgot <a href="#">password?</a>
