@@ -4,7 +4,7 @@ import {BrowserRouter as Router,Route} from 'react-router-dom'
 import WelcomePage from './components/WelcomePage/WelcomePage' 
 import LoginPage from './components/LoginPage/LoginPage'
 import RegistrationPage from './components/RegistrationPage/RegistrationPage';
-
+import HomePage  from './components/HomePage/HomePage'
 
 const App=()=> {
   const [isLogin, setlogin] = useState(false)
@@ -14,6 +14,7 @@ const App=()=> {
         {isLogin?'':<Route path="/" exact component={WelcomePage}/>}
         <Route path="/vendor-login" component={LoginPage}/>
         <Route path="/vendor-register" component={RegistrationPage}/>
+        <Route path="/vendor-home" component={HomePage}/>
       </Router>
     </div>
   );
