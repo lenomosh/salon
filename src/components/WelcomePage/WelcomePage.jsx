@@ -5,7 +5,7 @@ import WelcomeNavbar from './WelcomePageNavbar'
 const WelcomePage = () => {
   return (
     <div className="welcome-page">
-     
+      <WelcomeNavbar/>
     </div>
   )
 }
