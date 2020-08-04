@@ -20,5 +20,12 @@
       letter-spacing: 4px;
     }
   }
+  .welcome-page-body{
+    background: #161415 url(./imgs/welcome-bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30vh;
+  }
   
 }
