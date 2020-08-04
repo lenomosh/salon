@@ -4,8 +4,8 @@ const ContactsPage = () => {
     return (
         <div className="contactspage">
             <h1>Contacts</h1>
-        </div>
+     </div>
     )
-}
+    }
 
 export default ContactsPage
