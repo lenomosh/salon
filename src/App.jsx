@@ -9,7 +9,7 @@ const App=()=> {
   return (
     <div className="vendor-page">
       <Router>
-      
+        {isLogin?'':<Route path="/" exact component={WelcomePage}/>}
       </Router>
     </div>
   );
