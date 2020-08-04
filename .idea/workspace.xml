@@ -2,43 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca779c88-3fbb-4d1e-aa19-0db091a5daf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Business.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/BusinessImage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/BusinessOperatingHour.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/BusinessService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/BusinessServiceRating.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/BusinessServiceType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/BusinessType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ServiceBooking.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ServiceRatingDescription.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ServiceSlot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ServiceSlotTracker.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_111738_create_businesses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_113002_create_business_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_113224_create_business_images_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_113448_create_business_services_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_113824_create_business_service_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114004_create_business_service_ratings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114238_create_user_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114418_create_service_rating_descriptions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114951_create_business_operating_hours_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_120828_create_customers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_122817_create_service_bookings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_125054_create_service_slots_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_125402_create_service_slot_trackers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BusinessImageSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BusinessOperatingHourSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BusinessSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BusinessServiceRatingSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BusinessServiceSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BusinessServiceTypeSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BusinessTypeSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ServiceRatingDescriptionSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UserTypeSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_lighthouse_ide_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphql/schema.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmatic-types.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema-directives.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/salon-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/salon-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -159,6 +131,8 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/nuwave/lighthouse" />
       <path value="$PROJECT_DIR$/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/vendor/haydenpierce/class-finder" />
+      <path value="$PROJECT_DIR$/vendor/mll-lab/laravel-graphql-playground" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fdE4k3FQyzJssq6fMrsnzziaV9" />
@@ -170,6 +144,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,7 +174,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596539380052</updated>
-      <workItem from="1596539388017" duration="6318000" />
+      <workItem from="1596539388017" duration="7443000" />
+      <workItem from="1596547873858" duration="191000" />
+      <workItem from="1596548091428" duration="1412000" />
     </task>
     <servers />
   </component>
@@ -211,7 +188,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
