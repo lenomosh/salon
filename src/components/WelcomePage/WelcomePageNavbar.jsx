@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const WelcomePageNavbar = () => {
   return (
@@ -34,7 +35,7 @@ const WelcomePageNavbar = () => {
               <li className="nav-item">
                 <button class="btn btn-outline-primary" type="button">Sign Up</button>
               </li>
-              <li className="nav-item"><a href="#contact" className="nav-link">Log in</a></li>
+              <li className="nav-item"><Link className="nav-link" to={"/login"}>Log in</Link></li>
             </ul>
           </div>
         </div>
