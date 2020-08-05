@@ -3,18 +3,29 @@
         text-align: center;
 
     }
+    .form-group{
+        text-align:center ;
+        resize:20%;
+    }
     h1{
-        text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
     #button{
         text-align: center
     }
    img{
-       size:50%;
-       padding: 10%;
+        height: 460px;
+        width: 460px;
+        padding: 10%;
    }
    .services{
        text-align: center;
    }
-   background-image: url();
+    background-image: url(https://st.depositphotos.com/1007388/2516/i/950/depositphotos_25163561-stock-photo-pink-grunge-texture-or-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size:200% ;
+
 }

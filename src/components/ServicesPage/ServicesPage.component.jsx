@@ -20,7 +20,7 @@ const ServicesPage = () => {
                         <h2> Hair</h2>
                     </div>
                     <div className="col-md-4" id="hair">
-                        <img src="images/services/boyshair.gif" alt=""/>
+                        <img src="images/services/mens.jpg" alt=""/>
                         <h2>barber shop</h2>
                     </div>
                     <div className="col-md-4" id="hair">
@@ -30,7 +30,7 @@ const ServicesPage = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-4" id="hair">
-                        <img src="images/services/massage.gif" alt=""/>
+                        <img src="images/services/massage.png" alt=""/>
                         <h2>Massage</h2>
                     </div>
                     <div className="col-md-4" id="hair">
