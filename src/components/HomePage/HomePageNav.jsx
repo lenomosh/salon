@@ -39,18 +39,6 @@ const HomePageNav=(props)=> {
                 <p>Sign out</p>
               </a>
             </li>
-            <li className="nav-item ">
-              <a className="nav-link" href="./map.html">
-                <i className="material-icons">location_ons</i>
-                <p>Maps</p>
-              </a>
-            </li>
-            <li className="nav-item ">
-              <a className="nav-link" href="./notifications.html">
-                <i className="material-icons">notifications</i>
-                <p>Notifications</p>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
