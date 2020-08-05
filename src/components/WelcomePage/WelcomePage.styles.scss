@@ -9,6 +9,9 @@
   height: 100%;
   .navbar{
     background-color: #e8206b;
+    .dropdown-menu{
+     min-width: 20rem;
+    }
     .navbar-brand{
       font-family: "Josefin Sans", Arial, sans-serif;
     }

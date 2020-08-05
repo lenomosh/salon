@@ -15,21 +15,34 @@ const WelcomePageNavbar = () => {
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Why Urembo</a>
                 <div className="dropdown-menu">
-                  <a className="dropdown-item" href="#">Action</a>
-                  <a className="dropdown-item" href="#">Another action</a>
-                  <a className="dropdown-item" href="#">Something else here</a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">Separated link</a>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <p className="dropdown-item">Get noticed</p>
+                      <p className="dropdown-item">Get booked</p>
+                    </div>
+                    <div className="col-md-6">
+                      <p className="dropdown-item">Get repeats</p>
+                      <p className="dropdown-item">Get organised</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Features</a>
                 <div className="dropdown-menu">
-                  <a className="dropdown-item" href="#">Action</a>
-                  <a className="dropdown-item" href="#">Another action</a>
-                  <a className="dropdown-item" href="#">Something else here</a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">Separated link</a>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <p className="dropdown-item">Powerful salon<br/> software</p>
+                      <p className="dropdown-item">24/7 online <br/>booking</p>
+                      <p className="dropdown-item">Secure client<br/> management</p>
+                    </div>
+                    <div className="col-md-6">
+                      <p className="dropdown-item">Easy marketing <br/>tools</p>
+                      <p className="dropdown-item">Personalised<br/> website</p>
+                      <p className="dropdown-item">Smart pricing</p>
+                      <p className="dropdown-item">Point of sale</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li className="nav-item">

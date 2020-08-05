@@ -6,7 +6,7 @@ const RegistrationPage=(props)=> {
   return (
     <div className="registration-page text-white">
       <div className="registration-form">
-        <form>
+        <form id="reg-form">
           <Link className="nav-link" to={"/"}><img src="https://img.icons8.com/color/24/000000/logout-rounded-left--v1.png"/></Link>
           <h3>Sign Up</h3>
           <div className="row">
