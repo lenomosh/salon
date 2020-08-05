@@ -1,14 +1,69 @@
 .servicesPage{
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
     p{
         text-align: center;
-
+        font-weight: bold;
+        
     }
-    .form-group{
-        text-align:center ;
-        resize:20%;
+    .pop{
+        color:rgb(160, 51, 87);
+        font-weight: 500%;
+        font-size: 100%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+    }
+    .pro{
+        color: purple;
+        font-weight: bold;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: rgba(177, 131, 173, 0.548);
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .nav-links li{
+        list-style: none;
+    }
+    .nav-links a{
+        color: rgb(80, 47, 80);
+        text-decoration:purple;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .logo{
+        color: purple;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    .burger div{
+        width: 25px;
+        height: 5px;
+        background-color: black;
+        margin: 3px;
+    }
+    .burger{
+        display: none;
+    }
+    .form-wrapper{
+        width: 50%;
+        margin: auto;
     }
     h1{
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 3000px;
     }
     #button{
         text-align: center
@@ -26,6 +81,32 @@
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
-    font-size:200% ;
-
+    @media screen  and (max-width: width 1080px){
+        display: none;
+        .nav-links{
+            width: 100%;
+        }    
+    }
+    @media screen  and (max-width: width 768px){
+        .servicesPage{
+        overflow: hidden;
+        }
+        .nav-links{
+            position:absolute;
+            right: 0px;
+            height: 92px;
+            top: 8vh;
+            background-color:rgb(80, 47, 80);
+            display: flex;
+            align-items: center;
+            width: 50%;
+            transform: translate(100%);
+        }  
+        .nav-link li{
+            opacity: 0;
+        }  
+        .burger{
+            display: block;
+        }
+    }
 }
