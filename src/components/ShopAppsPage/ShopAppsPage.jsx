@@ -1,17 +1,111 @@
 import React from 'react';
 import './ShopAppsPage.styles.scss'
 
+//Appointment Pending status Component
+const AppPending=(props)=>{
+  return(
+    <tr className="app-pending">
+      <td>
+        Dennis Kamunya
+      </td>
+      <td>
+        Massage
+      </td>
+      <td>
+        Thursday 4th 2.30pm
+      </td>
+      <td>
+        No
+      </td>
+      <td className="text-primary">
+        Pending...
+      </td>
+      <td className="text-danger">
+        <button type="button" rel="tooltip" className="btn btn-outline-danger btn-round">
+          <i className="material-icons">close</i>
+        </button>
+      </td>
+      <td className="text-success">
+        <button type="button" rel="tooltip" className="btn btn-outline-success btn-round">
+          <i className="material-icons">check_circle</i>
+        </button>
+      </td>
+    </tr>
+
+  )
+}
+
+//Appointment Approved status Component
+const AppApproved=(props)=>{
+  return(
+    <tr className="app-approved">
+      <td>
+        Dennis Kamunya
+      </td>
+      <td>
+        Massage
+      </td>
+      <td>
+        Thursday 4th 2.30pm
+      </td>
+      <td>
+        Yes
+      </td>
+      <td className="text-primary">
+        Approved
+      </td>
+      <td className="text-primary">
+        <button type="button" rel="tooltip" className="btn btn-outline-danger btn-round">
+          <i className="material-icons">close</i>
+        </button>
+      </td>
+    </tr>
+
+  )
+}
+
+//Appointment Declined status Component
+const AppDeclined=(props)=>{
+  return(
+    <tr className="app-declined">
+      <td>
+        Dennis Kamunya
+      </td>
+      <td>
+        Massage
+      </td>
+      <td>
+        Thursday 4th 2.30pm
+      </td>
+      <td>
+        No
+      </td>
+      <td className="text-primary">
+      Declined
+      </td>
+      <td className="text-success">
+      </td>
+      <td className="text-success">
+        <button type="button" rel="tooltip" className="btn btn-outline-success btn-round">
+          <i className="material-icons">check_circle</i>
+        </button>
+      </td>
+    </tr>
+
+  )
+}
+
 const ShopAppsPage=(props)=> {
   return (
     <div className="shop-apps-page">
-      <div class="card">
-        <div class="card-header card-header-primary">
-          <h4 class="card-title ">Appointments</h4>
+      <div className="card">
+        <div className="card-header card-header-primary">
+          <h4 className="card-title ">Appointments</h4>
         </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table">
-              <thead class=" text-primary">
+        <div className="card-body">
+          <div className="table-responsive">
+            <table className="table">
+              <thead className=" text-primary">
                 <th>
                   Customer Name
                 </th>
@@ -35,80 +129,9 @@ const ShopAppsPage=(props)=> {
                 </th>
               </thead>
               <tbody>
-
-                <tr>
-                  <td>
-                    Dennis Kamunya
-                  </td>
-                  <td>
-                    Massage
-                  </td>
-                  <td>
-                    Thursday 4th 2.30pm
-                  </td>
-                  <td>
-                    No
-                  </td>
-                  <td class="text-primary">
-                    Pending...
-                  </td>
-                  <td class="text-danger">
-                    <button type="button" rel="tooltip" class="btn btn-outline-danger btn-round">
-                      <i class="material-icons">close</i>
-                    </button>
-                  </td>
-                  <td class="text-success">
-                    <button type="button" rel="tooltip" class="btn btn-outline-success btn-round">
-                      <i class="material-icons">check_circle</i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Dennis Kamunya
-                  </td>
-                  <td>
-                    Massage
-                  </td>
-                  <td>
-                    Thursday 4th 2.30pm
-                  </td>
-                  <td>
-                    Yes
-                  </td>
-                  <td class="text-primary">
-                    Approved
-                  </td>
-                  <td class="text-primary">
-                    <button type="button" rel="tooltip" class="btn btn-outline-danger btn-round">
-                      <i class="material-icons">close</i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Dennis Kamunya
-                  </td>
-                  <td>
-                    Massage
-                  </td>
-                  <td>
-                    Thursday 4th 2.30pm
-                  </td>
-                  <td>
-                    No
-                  </td>
-                  <td class="text-primary">
-                   Declined
-                  </td>
-                  <td class="text-success">
-                  </td>
-                  <td class="text-success">
-                    <button type="button" rel="tooltip" class="btn btn-outline-success btn-round">
-                      <i class="material-icons">check_circle</i>
-                    </button>
-                  </td>
-                </tr>
+                <AppPending/>
+                <AppApproved/>
+                <AppDeclined/>
               </tbody>
             </table>
           </div>
