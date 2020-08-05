@@ -20,7 +20,7 @@ class CreateBusinessOperatingHoursTable extends Migration
             $table->time('end_time');
             $table->time('lunch_start_time');
             $table->integer('lunch_length');
-            $table->enum('status',['Open','Closed'])->default('Open');
+            $table->string('status')->default('Open');
             $table->integer('business_id');
             $table->timestamps();
         });

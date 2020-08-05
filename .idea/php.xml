@@ -106,6 +106,10 @@
       <path value="$PROJECT_DIR$/vendor/webonyx/graphql-php" />
       <path value="$PROJECT_DIR$/vendor/haydenpierce/class-finder" />
       <path value="$PROJECT_DIR$/vendor/mll-lab/laravel-graphql-playground" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/bcmath_compat" />
+      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

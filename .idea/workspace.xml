@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca779c88-3fbb-4d1e-aa19-0db091a5daf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/telescope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/salon-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/salon-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Business.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Business.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessImage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessOperatingHour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessOperatingHour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessServiceRating.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessServiceRating.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessServiceType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessServiceType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ServiceBooking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ServiceBooking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ServiceRatingDescription.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ServiceRatingDescription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ServiceSlot.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ServiceSlot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ServiceSlotTracker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ServiceSlotTracker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_04_113824_create_business_service_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_113824_create_business_service_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_04_114951_create_business_operating_hours_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_114951_create_business_operating_hours_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphql/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/schema.graphql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,6 +140,10 @@
       <path value="$PROJECT_DIR$/vendor/webonyx/graphql-php" />
       <path value="$PROJECT_DIR$/vendor/haydenpierce/class-finder" />
       <path value="$PROJECT_DIR$/vendor/mll-lab/laravel-graphql-playground" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/bcmath_compat" />
+      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fdE4k3FQyzJssq6fMrsnzziaV9" />
@@ -183,7 +187,7 @@
       <updated>1596539380052</updated>
       <workItem from="1596539388017" duration="7443000" />
       <workItem from="1596547873858" duration="191000" />
-      <workItem from="1596548091428" duration="12755000" />
+      <workItem from="1596548091428" duration="20434000" />
     </task>
     <servers />
   </component>
