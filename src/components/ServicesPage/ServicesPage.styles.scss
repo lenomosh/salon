@@ -20,12 +20,37 @@
         color: purple;
         font-weight: bold;
     }
+    ul li{
+        float: left;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        opacity: .8;
+        text-align: center;
+        font-size: 20px;
+        color: purple;
+        text-decoration:purple ;
+    }
+    ul li a{
+        text-decoration: rebeccapurple;
+        color: palevioletred;
+        display: block;
+    }
+    ul li a:hover{
+        background-color: rgb(10, 2, 19);
+    }
+    ul li ul li{
+        display: none;
+    }
+    ul li:hover ul li{
+        display: block;
+    }
     nav{
         display: flex;
         justify-content: space-around;
         align-items: center;
         min-height: 8vh;
-        background-color: rgba(177, 131, 173, 0.548);
+        background-color: rgba(156, 104, 152, 0.548);
     }
     .nav-links{
         display: flex;
@@ -81,6 +106,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     @media screen  and (max-width: width 1080px){
         display: none;
         .nav-links{

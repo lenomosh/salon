@@ -35,7 +35,7 @@ const ServicesPage = () => {
                             <a href="#">Massage</a>
                             <ul id="nav-links">
                                 <li>
-                                    <a href="#">Hotstone massage</a>
+                                    <a href="#">Hotstone</a>
                                 </li>
                                 <li>
                                     <a href="#">DeepTissue</a>
@@ -52,7 +52,7 @@ const ServicesPage = () => {
                             <a href="#">Nails</a>
                             <ul id="nav-links">
                                 <li>
-                                    <a href="#">acyrlic/Gel nails</a>
+                                    <a href="#">acyrlic</a>
                                 </li>
                                 <li>
                                     <a href="#">pedicure</a>
@@ -64,7 +64,7 @@ const ServicesPage = () => {
                                     <a href="#">nailpolish</a>
                                 </li>
                                 <li>
-                                    <a href="#">Nail or Gel Polish Remobal </a>
+                                    <a href="#">Nail/Gel removal </a>
                                 </li>
                                 <li>
                                     <a href="#">Stickons or Tips</a>
@@ -89,7 +89,7 @@ const ServicesPage = () => {
                             <a href="#">Makeup</a>
                             <ul id="nav-links">
                                 <li>
-                                    <a href="#">eyebrowshaping and Tinting</a>
+                                    <a href="#">eyebrowshaping</a>
                                 </li>
                                 <li>
                                     <a href="#">lashes</a>
