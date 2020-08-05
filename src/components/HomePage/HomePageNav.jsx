@@ -11,31 +11,31 @@ const HomePageNav=(props)=> {
         <div className="sidebar-wrapper">
           <ul className="nav">
             <li className="nav-item active">
-              <a className="nav-link" href="./dashboard.html">
+              <Link to="/vendor-home" className="nav-link">
                 <i className="material-icons">dashboard</i>
-                <p><Link to="/dashboard">Dashboard</Link></p>
-              </a>
+                <p>Dashboard</p>
+              </Link>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="./user.html">
+              <Link to="/vendor-home/shop-profile" className="nav-link">
                 <i className="material-icons">person</i>
-                <p><Link to="/shop-profile">Shop Profile</Link></p>
-              </a>
+                <p>Shop Profile</p>
+              </Link>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="./tables.html">
+              <Link to="/vendor-home/shop-services" className="nav-link" >
                 <i className="material-icons">content_paste</i>
-                <p><Link to="/shop-services">Shop Services</Link></p>
-              </a>
+                <p>Shop Services</p>
+              </Link>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="./typography.html">
+              <Link to="/vendor-home/appointments" className="nav-link">
                 <i className="material-icons">library_books</i>
-              <p><Link to="/appointments">Appointments</Link> </p>
-              </a>
+                <p>Appointments </p>
+              </Link>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="./icons.html">
+              <a className="nav-link" href="#" onClick={()=>{window.location.href='/'}}>
                 <i className="material-icons">bubble_chart</i>
                 <p>Sign out</p>
               </a>
