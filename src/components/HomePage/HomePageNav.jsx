@@ -1,11 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import ShopImg from '../../imgs/08.jpg'
 
 const HomePageNav=(props)=> {
   return (
     <div className='home-page-nav'>
       <div className="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+      <div className="shop-img">
+                  <a href="javascript:;">
+                    <img className="img" src={ShopImg} />
+                  </a>
+          </div>
         <div className="logo">
+       
           <span className="simple-text logo-normal shop-name">Shop Name</span>
         </div>
         <div className="sidebar-wrapper">
