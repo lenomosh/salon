@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import ShopImg from '../../imgs/08.jpg'
+import ShopImg from '../../imgs/profile/shop.jpg'
 
 const HomePageNav=(props)=> {
   return (
@@ -17,7 +17,7 @@ const HomePageNav=(props)=> {
         </div>
         <div className="sidebar-wrapper">
           <ul className="nav">
-            <li className="nav-item active">
+            <li className="nav-item">
               <Link to="/vendor-home" className="nav-link">
                 <i className="material-icons">dashboard</i>
                 <p>Dashboard</p>

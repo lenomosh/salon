@@ -53,10 +53,14 @@ const ShopAppsPage=(props)=> {
                     Pending...
                   </td>
                   <td class="text-danger">
-                    <a href='#'>Decline</a>
+                    <button type="button" rel="tooltip" class="btn btn-outline-danger btn-round">
+                      <i class="material-icons">close</i>
+                    </button>
                   </td>
                   <td class="text-success">
-                  <a href='#'>Approve</a>
+                    <button type="button" rel="tooltip" class="btn btn-outline-success btn-round">
+                      <i class="material-icons">check_circle</i>
+                    </button>
                   </td>
                 </tr>
                 <tr>
@@ -76,7 +80,9 @@ const ShopAppsPage=(props)=> {
                     Approved
                   </td>
                   <td class="text-primary">
-                    <a href='#'>Decline</a>
+                    <button type="button" rel="tooltip" class="btn btn-outline-danger btn-round">
+                      <i class="material-icons">close</i>
+                    </button>
                   </td>
                 </tr>
                 <tr>
@@ -98,7 +104,9 @@ const ShopAppsPage=(props)=> {
                   <td class="text-success">
                   </td>
                   <td class="text-success">
-                  <a href='#'>Approve</a>
+                    <button type="button" rel="tooltip" class="btn btn-outline-success btn-round">
+                      <i class="material-icons">check_circle</i>
+                    </button>
                   </td>
                 </tr>
               </tbody>
