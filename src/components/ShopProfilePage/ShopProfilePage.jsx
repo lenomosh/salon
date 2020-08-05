@@ -1,5 +1,6 @@
 import React from 'react';
 import './ShopProfilePage.styles.scss'
+
 const ShopProfilePage=(props)=> {
   return (
     <div className="shop-profile-page">
