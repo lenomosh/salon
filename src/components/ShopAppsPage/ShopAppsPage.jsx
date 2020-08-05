@@ -106,27 +106,29 @@ const ShopAppsPage=(props)=> {
           <div className="table-responsive">
             <table className="table">
               <thead className=" text-primary">
-                <th>
-                  Customer Name
-                </th>
-                <th>
-                  Service
-                </th>
-                <th>
-                  Time
-                </th>
-                <th>
-                  Payment
-                </th>
-                <th>
-                  Status
-                </th>
-                <th>
-                  Decline
-                </th>
-                <th>
-                  Approve
-                </th>
+                <tr>
+                  <th>
+                    Customer Name
+                  </th>
+                  <th>
+                    Service
+                  </th>
+                  <th>
+                    Time
+                  </th>
+                  <th>
+                    Payment
+                  </th>
+                  <th>
+                    Status
+                  </th>
+                  <th>
+                    Decline
+                  </th>
+                  <th>
+                    Approve
+                  </th>
+                </tr>
               </thead>
               <tbody>
                 <AppPending/>

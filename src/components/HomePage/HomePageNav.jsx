@@ -7,7 +7,7 @@ const HomePageNav=(props)=> {
     <div className='home-page-nav'>
       <div className="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
       <div className="shop-img">
-                  <a href="javascript:;">
+                  <a href="#">
                     <img className="img" src={ShopImg} />
                   </a>
           </div>
