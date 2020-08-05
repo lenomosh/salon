@@ -4,9 +4,16 @@
         padding: 0px;
         box-sizing: border-box;
     }
+    .location{
+        padding: 5%;   
+    }
+    #botton{
+        padding: 1px;
+    }
     p{
         text-align: center;
         font-weight: bold;
+        padding: 1%;
         
     }
     .pop{
@@ -83,8 +90,9 @@
         display: none;
     }
     .form-wrapper{
-        width: 50%;
+        width: 10%;
         margin: auto;
+        text-align: center;
     }
     h1{
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

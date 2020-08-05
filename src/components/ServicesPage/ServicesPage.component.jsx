@@ -7,6 +7,20 @@ const ServicesPage = () => {
     // console.log (arr)
     return (
         <div className="servicesPage">
+            <div className='location'>
+                <h1><span className='pop'>LOCATION</span></h1>
+                <p>Your are required to input you current loacation so that we can locate spas around you </p>
+                <form action="location">
+                    <div className='raw'>
+                        <div classNameName="form-wrapper">
+                            <div classNameName="form-group">
+                                <input type="location" className='col-md-4' className="form-control" placeholder="input location"/>
+                                <a href="#" className="btn btn-purple btn-md active" clarole="button" id='button'>Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <div className="intro">
                 <h1><span className='pop'>Popular </span> <span className='pro'>Procedures</span> </h1>
                 <p>Where beauty is a illumination of your soul </p>
@@ -114,16 +128,7 @@ const ServicesPage = () => {
     )
 }
 export default ServicesPage
-/* <h1>LOCATION</h1>
-            <p>Your are required to input you current loacation so that we can locate spas around you </p>
-            <form action="location">
-                <div classNameName="form-wrapper">
-                    <div classNameName="form-group">
-                        <input type="location" classNameName="form-control" placeholder="input location"/>
-                        <a href="#" classNameName="btn btn-purple btn-lg active"  role="button" id="button">SUBMIT</a>
-                    </div>
-                </div>
-            </form>
+/* 
             <div classNameName="Services"></div>
                 <p>Select service that you are interested in.</p>
                 <div classNameName="row">
