@@ -17,11 +17,6 @@ const RegistrationPage=(props)=> {
               </div>
 
               <div className="form-group">
-                <label>Registered Company Name</label>
-                <input type="text" className="form-control" id="company-name" placeholder="Company name" />
-              </div>
-          
-              <div className="form-group">
                 <label>Number of employees</label>
                 <input type="number" className="form-control" id="emp-no" placeholder="No of employees" />
               </div>
@@ -61,7 +56,7 @@ const RegistrationPage=(props)=> {
           </div>
           <div className="form-group">
             <label>Description</label>
-            <input type="text" className="form-control" id="shop-description" placeholder="Shop description" />
+            <textarea className="form-control" rows={5} defaultValue={""} id="shop-description" placeholder="Shop description"/>
           </div>
           <div className="form-group">
             <label>Password</label>
