@@ -6,18 +6,18 @@ const LoginPage=(props)=> {
   return (
     <div className="login-page text-white">
       <div className="login-form">
-        <form>
+        <form id="login-form">
           <Link className="nav-link" to={"/"}><img src="https://img.icons8.com/color/24/000000/logout-rounded-left--v1.png"/></Link>
           <h3>Sign In</h3>
 
           <div className="form-group">
             <label>Email address</label>
-            <input type="email" className="form-control" placeholder="Enter email" />
+            <input type="email" className="form-control" id="vendor-login" placeholder="Enter email" />
           </div>
 
           <div className="form-group">
             <label>Password</label>
-            <input type="password" className="form-control" placeholder="Enter password" />
+            <input type="password" className="form-control" id="vendor-login" placeholder="Enter password" />
           </div>
 
           <div className="form-group">
