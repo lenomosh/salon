@@ -18,7 +18,7 @@ class CreateServiceBookingsTable extends Migration
             $table->integer('business_service_id');
             $table->integer('customer_id');
             $table->boolean('has_paid');
-            $table->enum('status',['accepted','pending','booked','arrived','fulfilled','canceled','noshow','entered-in-error','checked-in'])->default('pending');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

@@ -12,7 +12,6 @@ type Query {
 type Mutation{
     createBusiness(name:String!, location:String!, business_type_id: Int!):Business @create
     createBusinessType(name:String!):BusinessServiceType @create # Working
-    createBusinessOperatingHour( dow:Int!, start_time:DateTime!, end_time:DateTime!, lunch_start_time:DateTime!,lunch_length:Int!,status:EOperatingHour!,business_id:[Business!]!):BusinessOperatingHour! @create
     createBusinessServiceType(name:String ):BusinessServiceType! @create
     createBusinessService(
         business_id:Int!,
@@ -23,15 +22,57 @@ type Mutation{
         duration:Int!
     ):BusinessService @create
     createBusinessServiceType(name:String!):BusinessServiceType @create
-    createBusinessOperatingHour(
-        dow:Int!,
-        start_time:DateTime!,
-        end_time:DateTime!,
-        lunch_start_time:DateTime!,
-        lunch_length:Int!,
-        status:String!,
-        business_id:Int!
-    ):BusinessOperatingHour @create
+    createBusinessOperatingHour(input : createBusinessOperatingHourInput! @spread ):BusinessOperatingHour @create
+    createBusinessServiceRating(
+        rating:Int!
+        service_id:Int!
+        customer_id:Int!):BusinessServiceRating @create
+    createUserType(name:String):UserType @create
+    createServiceRatingDescription(
+        business_service_rating_id:Int!
+        description:String!
+        rating_id:Int!
+    ):ServiceRatingDescription @create
+    createCustomer(    fname:String!
+        lname:String!
+        phone_number:String!
+        password:String! @hash
+        email:String!):Customer @create
+    createServiceBooking(
+        business_service_id:Int!
+        customer_id:Int!
+        has_paid:Boolean!
+        status:ServiceBookingStatus!
+    ):ServiceBooking @create
+    createServiceSlot(
+        slots_per_day:Int!
+        service_id:Int!
+        slots_per_session:Int
+    ):ServiceSlot @create
+    createServiceSlotTracker(
+        service_id:Int!
+        total_slots:Int!
+        remaining_slots:Int!):ServiceSlotTracker @create
+    createUser(name: String!
+        email: String!
+        type_id:Int!
+        password:String! @hash
+    ):User @create
+    createUserType(name:String!):UserType @create
+
+
+
+
+
+}
+input createBusinessOperatingHourInput{
+    dow:Int!
+    start_time:DateTime!
+    end_time:DateTime!
+    lunch_start_time:DateTime!
+    lunch_length:Int!
+    status:String!
+    business_id:Int!
 }
 
 type User {
@@ -86,19 +127,23 @@ type BusinessServiceRating {
     rating:Int!
     service_id:[BusinessService]
     customer_id:[Customer!]!
+    created_at: DateTime!
+    updated_at: DateTime!
 }
 type UserType{
+    id:ID!
     name:String!
+    created_at: DateTime!
+    updated_at: DateTime!
 }
 type ServiceRatingDescription{
+    id:ID!
+    created_at: DateTime!
+    updated_at: DateTime!
     business_service_rating_id:[BusinessServiceRating!]!
     description:String!
     rating_id:[BusinessServiceRating!]!
 
-}
-enum EOperatingHour {
-    OPEN @enum(value:0)
-    CLOSED @enum(value:1)
 }
 type BusinessOperatingHour{
     dow:Int!
@@ -116,6 +161,9 @@ type Customer{
     password:String!
     email:String!
     email_verified_at:DateTime
+    id:ID!
+    created_at: DateTime!
+    updated_at: DateTime!
 }
 enum ServiceBookingStatus{
     ACCEPTED @enum(value:0)
@@ -133,15 +181,24 @@ type ServiceBooking{
     customer_id:[Customer!]!
     has_paid:Boolean!
     status:ServiceBookingStatus!
+    id:ID!
+    created_at: DateTime!
+    updated_at: DateTime!
 }
 type ServiceSlot{
     slots_per_day:Int!
     service_id:[BusinessService!]!
     slots_per_session:Int!
+    id:ID!
+    created_at: DateTime!
+    updated_at: DateTime!
 }
 type ServiceSlotTracker{
     service_id:[BusinessService!]!
     total_slots:Int!
     remaining_slots:Int!
+    id:ID!
+    created_at: DateTime!
+    updated_at: DateTime!
 }
 
