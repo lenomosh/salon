@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const HomePageNav=(props)=> {
   return (
@@ -12,25 +13,25 @@ const HomePageNav=(props)=> {
             <li className="nav-item active">
               <a className="nav-link" href="./dashboard.html">
                 <i className="material-icons">dashboard</i>
-                <p>Dashboard</p>
+                <p><Link to="/dashboard">Dashboard</Link></p>
               </a>
             </li>
             <li className="nav-item ">
               <a className="nav-link" href="./user.html">
                 <i className="material-icons">person</i>
-                <p>Shop Profile</p>
+                <p><Link to="/shop-profile">Shop Profile</Link></p>
               </a>
             </li>
             <li className="nav-item ">
               <a className="nav-link" href="./tables.html">
                 <i className="material-icons">content_paste</i>
-                <p>Shop Services</p>
+                <p><Link to="/shop-services">Shop Services</Link></p>
               </a>
             </li>
             <li className="nav-item ">
               <a className="nav-link" href="./typography.html">
                 <i className="material-icons">library_books</i>
-                <p>Appointments </p>
+              <p><Link to="/appointments">Appointments</Link> </p>
               </a>
             </li>
             <li className="nav-item ">
