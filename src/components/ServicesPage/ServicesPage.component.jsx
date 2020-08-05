@@ -16,18 +16,91 @@ const ServicesPage = () => {
                    <ul className="nav-links">
                         <li>
                             <a href="#">Hair</a>
+                            <ul id="nav-links">
+                                <li>
+                                    <a href="#">braiding</a>
+                                </li>
+                                <li>
+                                    <a href="#">weaving</a>
+                                </li>
+                                <li>
+                                    <a href="#">wash and setting</a>
+                                </li>
+                                <li>
+                                    <a href="#">hair dye</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">Massage</a>
+                            <ul id="nav-links">
+                                <li>
+                                    <a href="#">Hotstone massage</a>
+                                </li>
+                                <li>
+                                    <a href="#">DeepTissue</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sweedish</a>
+                                </li>
+                                <li>
+                                    <a href="#">Aroma therapy</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">Nails</a>
+                            <ul id="nav-links">
+                                <li>
+                                    <a href="#">acyrlic/Gel nails</a>
+                                </li>
+                                <li>
+                                    <a href="#">pedicure</a>
+                                </li>
+                                <li>
+                                    <a href="#">manicure</a>
+                                </li>
+                                <li>
+                                    <a href="#">nailpolish</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nail or Gel Polish Remobal </a>
+                                </li>
+                                <li>
+                                    <a href="#">Stickons or Tips</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">Skin</a>
+                            <ul id="nav-links">
+                                <li>
+                                    <a href="#">facial</a>
+                                </li>
+                                <li>
+                                    <a href="#">Body Scrub</a>
+                                </li>
+                                <li>
+                                    <a href="#">Electrotherapy</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">Makeup</a>
+                            <ul id="nav-links">
+                                <li>
+                                    <a href="#">eyebrowshaping and Tinting</a>
+                                </li>
+                                <li>
+                                    <a href="#">lashes</a>
+                                </li>
+                                <li>
+                                    <a href="#">casual make up</a>
+                                </li>
+                                <li>
+                                    <a href="#">dinner make up</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <div className="burger">
