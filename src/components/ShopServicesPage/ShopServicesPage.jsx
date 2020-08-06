@@ -215,7 +215,7 @@ const WaxingService=(props)=>{
 
 const EditService=(props)=>{
   return(
-    <div class="modal fade" id="editservice" tabindex="-1" role="">
+    <div class="modal fade" id="editservice" role="">
       <div class="modal-dialog modal-login" role="document">
           <div class="modal-content">
             <div class="card card-signup card-plain">
