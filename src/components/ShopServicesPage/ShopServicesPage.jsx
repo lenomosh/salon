@@ -29,10 +29,10 @@ const HairService=(props)=>{
       </p>
       
       <div className="stats ml-auto">
-        <button class="btn btn-round" data-toggle="modal" data-target="#editservice">
+        <button className="btn btn-round" data-toggle="modal" data-target="#editservice">
           <i className="material-icons">edit</i>
         </button>
-        <button class="btn btn-round"id="delete-service">
+        <button className="btn btn-round"id="delete-service">
           <i className="material-icons">delete</i>
         </button>  
       </div>
@@ -215,51 +215,52 @@ const WaxingService=(props)=>{
 
 const EditService=(props)=>{
   return(
-    <div class="modal fade" id="editservice" role="">
-      <div class="modal-dialog modal-login" role="document">
-          <div class="modal-content">
-            <div class="card card-signup card-plain">
-              <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                  <i class="material-icons">clear</i>
-                </button>
-                <form class="form" id="edit-service-form" method="" action="">
-                  <p class="description text-center">Service name</p>
-                  <div class="card-body">
-                    <div class="form-group bmd-form-group">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="material-icons">money</i></div>
-                        </div>
-                        <input type="number" id="edit-service-price" class="form-control" placeholder="Price..."/>
+    <div className="modal fade" id="editservice" role="">
+      <div className="modal-dialog modal-login" role="document">
+        <div className="modal-content">
+          <div className="card card-signup card-plain">
+            <div className="modal-body">
+              <button type="button" className="close" data-dismiss="modal" aria-hidden="true">
+                <i className="material-icons">clear</i>
+              </button>
+              <form className="form" id="edit-service-form" method="" action="">
+                <p className="description text-center">Service name</p>
+                <div className="card-body">
+                  <div className="form-group bmd-form-group">
+                    <div className="input-group">
+                      <div className="input-group-prepend">
+                        <div className="input-group-text"><i className="material-icons">money</i></div>
                       </div>
+                      <input type="number" id="edit-service-price" className="form-control" placeholder="Price..."/>
                     </div>
-
-                    <div class="form-group bmd-form-group">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="material-icons">date_range</i></div>
-                        </div>
-                        <input type="text" id="edit-service-dur" class="form-control" placeholder="Duration..."/>
-                      </div>
-                    </div>
-
-                    <div class="form-group bmd-form-group">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="material-icons">description</i></div>
-                        </div>
-                        <textarea className="form-control" rows={5} defaultValue={""} id="edit-service-description" placeholder="Service description"/>
-                      </div>
-                      </div>
                   </div>
-                </form>
-              </div>
-              <div class="modal-footer justify-content-center">
-                <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Update</a>
-              </div>
+    
+                  <div className="form-group bmd-form-group">
+                    <div className="input-group">
+                      <div className="input-group-prepend">
+                        <div className="input-group-text"><i className="material-icons">date_range</i></div>
+                      </div>
+                      <input type="text" id="edit-service-dur" className="form-control" placeholder="Duration..."/>
+                    </div>
+                  </div>
+    
+                  <div className="form-group bmd-form-group">
+                    <div className="input-group">
+                      <div className="input-group-prepend">
+                        <div className="input-group-text"><i className="material-icons">description</i></div>
+                      </div>
+                      <textarea className="form-control" rows={5} defaultValue={""} id="edit-service-description" placeholder="Service description"/>
+                    </div>
+                    </div>
+                </div>
+                <div className="modal-footer justify-content-center">
+                  <button className="btn btn-primary btn-link btn-wd btn-lg" type="submit" id="btn-edit-service">Update</button>
+                </div>
+              </form>
             </div>
+            
           </div>
+        </div>
       </div>
     </div>
   )

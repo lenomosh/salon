@@ -53,7 +53,7 @@ const Dashboard=(props) =>{
                 <div className="card-footer">
                   <div className="stats">
                     <i className="material-icons text-danger">warning</i>
-                    <a href="javascript:;">Add More Space...</a>
+                    <a href="#">Add More Space...</a>
                   </div>
                 </div>
               </div>
@@ -99,16 +99,14 @@ const Dashboard=(props) =>{
           </div>
           <div className="row">
             <div className="col-lg-6 col-md-12">
-              <Link to="/vendor-home/shop-profile" class="card card-profile">
-                <div class="card-avatar">
-                  <a href="javascript:;">
-                    <img class="img" src={ShopImg} />
-                  </a>
+              <Link to="/vendor-home/shop-profile" className="card card-profile">
+                <div className="card-avatar">
+                    <img className="img" src={ShopImg} />
                 </div>
-                <div class="card-body">
-                  <h6 class="card-category text-gray">Shop owner</h6>
-                  <h4 class="card-title">Shop name</h4>
-                  <p class="card-description">
+                <div className="card-body">
+                  <h6 className="card-category text-gray">Shop owner</h6>
+                  <h4 className="card-title">Shop name</h4>
+                  <p className="card-description">
                     Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
                   </p>
                  

@@ -12,12 +12,12 @@ const LoginPage=(props)=> {
 
           <div className="form-group">
             <label>Email address</label>
-            <input type="email" className="form-control" id="vendor-login" placeholder="Enter email" />
+            <input type="email" className="form-control" id="vendor-email" placeholder="Enter email" />
           </div>
 
           <div className="form-group">
             <label>Password</label>
-            <input type="password" className="form-control" id="vendor-login" placeholder="Enter password" />
+            <input type="password" className="form-control" id="vendor-password" placeholder="Enter password" />
           </div>
 
           <div className="form-group">

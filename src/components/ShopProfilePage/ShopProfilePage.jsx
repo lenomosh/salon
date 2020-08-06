@@ -76,9 +76,7 @@ const ShopProfilePage=(props)=> {
             <div className="col-md-4">
               <div className="card card-profile">
                 <div className="card-avatar">
-                  <a href="javascript:;">
                     <img className="img" src={ShopImage} />
-                  </a>
                 </div>
                 <div className="card-body">
                   <h6 className="card-category text-gray">About</h6>

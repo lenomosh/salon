@@ -35,7 +35,7 @@ const RegistrationPage=(props)=> {
             <div className="form-group">
             <label>
               Shop services:
-              <select class="form-control drop" id="vendor-services" multiple required>
+              <select className="form-control drop" id="vendor-services" multiple required>
                 <option>Hair</option>
                 <option>Nails</option>
                 <option>Massage</option>
