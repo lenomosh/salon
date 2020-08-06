@@ -4,7 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 import ServicesPage from './components/ServicesPage/ServicesPage.component';
 import ServiceShow from './components/ServicesPage/show/show.component';
 import ServiceBarbershop from './components/ServicesPage/barbershop/barbershop.component';
-import ServiceMassage from './components/ServicesPage/massage.component';
+import ServiceMassage from './components/ServicesPage/massage/Massage.component';
+
 
 
 function App() {
