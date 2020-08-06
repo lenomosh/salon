@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./show.styles.scss"
 const ServiceShow= () => {
+    const [url, setUrl] = useState('htpp;//'+window.location.host+"/")
     return (
         <div className="serviveshow">
             <div className='braids'>
@@ -18,9 +19,9 @@ const ServiceShow= () => {
                 </div>
             </div>
             <div className='weave'>
-                <div className='raw'>
+                <div className='row'>
                     <div className='col-md-4'>
-                        <img src="images/services/straightening.gif" alt=""/>
+                        <img src="http://localhost:3000/images/services/straightening.gif" alt=""/>
                     </div>
                     <div className='col-md-4'>
                         <h4>Hair weaving is the quickest technique that you can apply to get back hairs on your receding hairline instantly. </h4>
