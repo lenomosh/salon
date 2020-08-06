@@ -7,6 +7,7 @@ import ContactsPage from './components/ContactsPage/ContactsPage.component';
 import ServiceShow from './components/ServicesPage/show/show.component';
 import ServiceBarbershop from './components/ServicesPage/barbershop/barbershop.component';
 
+
 function App() {
   return (
     <div >

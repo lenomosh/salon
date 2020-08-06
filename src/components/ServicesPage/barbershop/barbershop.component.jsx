@@ -43,14 +43,14 @@ const ServiceBarbershop= () => {
                     </div>
                 </div>
             </div>
-            <div className='hair removal'>
+            <div className='wave'>
                 <div className='raw'>
                     <div className='col-md-4'>
-                        <img src="images/services/dreadlock.gif" alt=""/>
+                        <img src="images/services/wave.png" alt=""/>
                     </div>
                     <div className='col-md-4'>
-                        <h4>Arguably, one of the greatest benefits of having dreadlocks is the simple fact that it promotes healthy hair. By twisting your hair into locks, it preserves its natural moisture, preventing it from drying out.</h4>
-                        <h4>Dry hair may seem harmless enough, but it can have truly devastating effects.</h4>
+                        <h4>Modern and bold, a bald fade with waves is great if you want a very short haircut.</h4>
+                        <h4>Also known as a skin fade, the bald fade haircut can start high, low or in the middle and will gradually taper down to shaved sides.</h4>
                     </div>
                     <div className='col-md-4'>
                         <a href="#" class="btn btn-pruple btn-lg active" role="button">SELECT</a>

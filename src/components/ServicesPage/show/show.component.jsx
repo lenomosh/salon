@@ -2,7 +2,7 @@ import React from 'react'
 import "./show.styles.scss"
 const ServiceShow= () => {
     return (
-        <div classNameName="serviveshow">
+        <div className="serviveshow">
             <div className='braids'>
                 <div className='raw'>
                     <div className='col-md-4'>
@@ -27,7 +27,7 @@ const ServiceShow= () => {
                         <h4>This fast method also ensures that the hair stays on your head for more than just a few weeks.</h4>
                     </div> 
                     <div className='col-md-4'>
-                        <a href="#" className="btn btn-purple btn-md active" clarole="button" id='button'>Select</a>
+                        <a href="#" className="btn btn-purple btn-lg active" clarole="button" id='button'>Select</a>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@ const ServiceShow= () => {
                         <h4>“When hair is curly, all you see is volume.</h4>
                     </div>
                     <div className='col-md-4'>
-                        <a href="#" class="btn btn-pruple btn-lg active" role="button">SELECT</a>
+                        <a href="#" class="btn btn-pruple btn-lg active" clarole="button">SELECT</a>
                     </div>
                 </div>
             </div>

@@ -95,27 +95,16 @@ const ServicesPage = () => {
                                     <a href="#">facial</a>
                                 </li>
                                 <li>
+                                    <a href="#">make up</a>
+                                </li>
+                                <li>
                                     <a href="#">Body Scrub</a>
                                 </li>
                                 <li>
                                     <a href="#">Electrotherapy</a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Makeup</a>
-                            <ul id="nav-links">
                                 <li>
-                                    <a href="#">eyebrowshaping</a>
-                                </li>
-                                <li>
-                                    <a href="#">lashes</a>
-                                </li>
-                                <li>
-                                    <a href="#">casual make up</a>
-                                </li>
-                                <li>
-                                    <a href="#">dinner make up</a>
+                                    <a href="#">hair removal</a>
                                 </li>
                             </ul>
                         </li>
@@ -125,43 +114,8 @@ const ServicesPage = () => {
                         <div className="line1"></div>
                         <div className="line1"></div>
                     </div>
-                </nav>
-                <div className='services'>
-                    <h6>we offer the following services on hair.choose the services to book</h6>
-                    <div className='raw'>
-                        <div className='hairs'>
-                           
-                                
-                                
-                              
-                                
-                              
-                    </div>
-                </div>
-                <div classNameName="row">
-                    <div classNameName="col-md-4" id="hair">
-                        <img src="images/services/massage.png" alt=""/>
-                        <h2>Massage</h2>
-                    </div>
-                    <div classNameName="col-md-4" id="hair">
-                        <img src="images/services/nails.gif" alt=""/>
-                        <h2>Nail</h2>
-                    </div>
-                    <div classNameName="col-md-4" id="hair">
-                        <img src="images/services/facial.gif" alt=""/>
-                        <h2>Face</h2>
-                    </div>
-                    <div classNameName="col-md-4" id="hair">
-                        <img src="images/services/facial.gif" alt=""/>
-                        <div classNameName="col-md-4" id="hair">
-                        <img src="images/services/facial.gif" alt=""/>
-                        <h2>Face</h2>
-                    </div>
-                    </div>
-                    </div>
-
-                </div>
-                       
+                </nav> 
+                <img src="images/services/portfolio.gif" alt=""/>
             </div>
             <div className='location'>
                 <h1><span className='pop'>LOCATION</span></h1>
