@@ -5,20 +5,29 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Business extends Model
 {
     protected $guarded = [];
-    public function type(): BelongsTo
+
+    /**
+     * @return BelongsTo
+     */
+    public function businessType(): BelongsTo
     {
-        return $this->belongsTo(BusinessServiceType::class,'id','business_type');
+        return $this->belongsTo(BusinessType::class);
 }
-public function image(): HasMany
+public function images(): HasMany
 {
     return $this->hasMany(BusinessImage::class,'business_id','id');
 }
 public function operatingHours():HasMany{
         return $this->hasMany(BusinessOperatingHour::class,'business_id','id');
+}
+public function owner():BelongsTo{
+        return $this->belongsTo(User::class,'user_id');
+}
+public function location():BelongsTo{
+        return  $this->belongsTo(Location::class,'id','location_id');
 }
 }

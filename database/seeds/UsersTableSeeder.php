@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
             'name'=>'John Does',
             'email'=>'admin@admin.com',
             'password'=>bcrypt('secret'),
-            'user_type_id'=>0
+            'user_type_id'=>1
 
         ]);
 
@@ -25,7 +25,8 @@ class UsersTableSeeder extends Seeder
             \App\User::create([
                 'name'=> $faker->name,
                 'email'=>$faker->email,
-                'password'=>bcrypt('secret')
+                'password'=>bcrypt('secret'),
+                 'user_type_id'=>random_int(1,12)
                 ]
             );
         }

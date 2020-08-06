@@ -6,13 +6,41 @@ scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date
 
 type Query {
     users: [User!]! @paginate(defaultCount: 10)
-    user(id: ID @eq): User @find
-    businessServiceType(id:ID @eq): BusinessServiceType @find
+    businesses:[Business!]! @all
+    businessTypes:[BusinessType!]! @all
+    locations:[Location!]! @all
+
 }
+extend type Query{
+    user(id: ID @eq): User @find
+    userType(id: ID @eq): UserType @find
+    business(id: ID @eq): Business @find
+    location(id: ID @eq): Location @find
+    businessType(id: ID @eq): BusinessType @find
+    businessImage(id: ID @eq): BusinessImage @find
+    businessService(id: ID @eq): BusinessService @find
+    businessServiceType(id: ID @eq): BusinessServiceType @find
+    businessServiceRating(id: ID @eq): BusinessServiceRating @find
+    serviceRatingDescription(id: ID @eq): ServiceRatingDescription @find
+    businessOperatingHour(id: ID @eq): BusinessOperatingHour @find
+    customer(id: ID @eq): Customer @find
+    serviceBookingStatus(id: ID @eq): ServiceBookingStatus @find
+    serviceBooking(id: ID @eq): ServiceBooking @find
+    serviceSlot(id: ID @eq): ServiceSlot @find
+    serviceSlotTracker(id: ID @eq): ServiceSlotTracker @find
+}
+#extend  type Query{
+#    customerLocation(id:ID @eq): Location
+#}
+#import types/*.graphql
+
 type Mutation{
-    createBusiness(name:String!, location:String!, business_type_id: Int!):Business @create
-    createBusinessType(name:String!):BusinessServiceType @create # Working
-    createBusinessServiceType(name:String ):BusinessServiceType! @create
+    createBusinessType(name:String!):BusinessType @create
+    createBusiness(
+        name:String!,
+        business_type_id: Int!,
+        user_id:Int!,
+        location_id:Int!):Business @create
     createBusinessService(
         business_id:Int!,
         name:String!,
@@ -21,49 +49,181 @@ type Mutation{
         service_type_id:Int!,
         duration:Int!
     ):BusinessService @create
+
+
     createBusinessServiceType(name:String!):BusinessServiceType @create
+
+
     createBusinessOperatingHour(input : createBusinessOperatingHourInput! @spread ):BusinessOperatingHour @create
+
+
     createBusinessServiceRating(
         rating:Int!
         service_id:Int!
         customer_id:Int!):BusinessServiceRating @create
+
+
     createUserType(name:String):UserType @create
+
+
     createServiceRatingDescription(
         business_service_rating_id:Int!
         description:String!
         rating_id:Int!
     ):ServiceRatingDescription @create
+
+
     createCustomer(    fname:String!
         lname:String!
         phone_number:String!
         password:String! @hash
-        email:String!):Customer @create
+        email:String!
+        location_id:Int!
+    ):Customer @create
+
+
     createServiceBooking(
         business_service_id:Int!
         customer_id:Int!
         has_paid:Boolean!
         status:ServiceBookingStatus!
     ):ServiceBooking @create
+
+
     createServiceSlot(
         slots_per_day:Int!
         service_id:Int!
         slots_per_session:Int
     ):ServiceSlot @create
+
+
     createServiceSlotTracker(
         service_id:Int!
         total_slots:Int!
         remaining_slots:Int!):ServiceSlotTracker @create
-    createUser(name: String!
+
+
+    createUser(
+        name: String!
         email: String!
-        type_id:Int!
+        user_type_id:Int!
         password:String! @hash
     ):User @create
-    createUserType(name:String!):UserType @create
+
+
+    createUserType( name:String! ):UserType @create
 
 
 
 
 
+}
+#update
+extend type Mutation{
+    updateBusinessType(id:ID!,name:String):BusinessType @update
+    updateBusiness(
+        id:ID!
+        name:String,
+        user_id:Int
+
+        business_type_id: Int,
+        location_id:Int):Business @update
+    updateBusinessService(
+        id:ID!
+        business_id:Int,
+        name:String,
+        description:String,
+        price:Int,
+        service_type_id:Int,
+        duration:Int
+    ):BusinessService @update
+
+
+    updateBusinessServiceType(id:ID!,name:String!):BusinessServiceType @update
+
+
+    updateBusinessOperatingHour(id:ID!,input : updateBusinessOperatingHourInput @spread ):BusinessOperatingHour @update
+
+
+    updateBusinessServiceRating(
+        id:ID!
+        rating:Int
+        service_id:Int
+        customer_id:Int):BusinessServiceRating @update
+
+
+    updateUserType(id:ID!,name:String):UserType @update
+
+
+    updateServiceRatingDescription(
+        id:ID!
+        business_service_rating_id:Int
+        description:String
+        rating_id:Int
+    ):ServiceRatingDescription @update
+
+
+    updateCustomer(
+        id:ID!
+        fname:String
+        lname:String
+        phone_number:String
+        password:String @hash
+        email:String
+        location_id:Int
+    ):Customer @update
+
+
+    updateServiceBooking(
+        id:ID!
+        business_service_id:Int
+        customer_id:Int
+        has_paid:Boolean
+        status:ServiceBookingStatus
+    ):ServiceBooking @update
+
+
+    updateServiceSlot(
+        id:ID!
+        slots_per_day:Int
+        service_id:Int
+        slots_per_session:Int
+    ):ServiceSlot @update
+
+
+    updateServiceSlotTracker(
+        id:ID!
+        service_id:Int
+        total_slots:Int
+        remaining_slots:Int):ServiceSlotTracker @update
+
+    updateUserType(is:ID!,name:String):UserType @update
+
+    updateUser(
+        id:ID!
+        name: String
+        email: String
+        type_id:Int
+        password:String @hash
+    ):User @update
+
+
+
+
+
+
+
+}
+
+
+input updateBusinessOperatingHourInput{
+    dow:Int
+    start_time:DateTime
+    end_time:DateTime
+    lunch_start_time:DateTime
+    lunch_length:Int
+    status:EOperatingHour
+    business_id:Int
 }
 input createBusinessOperatingHourInput{
     dow:Int!
@@ -71,134 +231,7 @@ input createBusinessOperatingHourInput{
     end_time:DateTime!
     lunch_start_time:DateTime!
     lunch_length:Int!
-    status:String!
+    status:EOperatingHour!
     business_id:Int!
-}
-
-type User {
-    id: ID!
-    name: String!
-    email: String!
-    type_id:[UserType!]!
-    password:String!
-    created_at: DateTime!
-    updated_at: DateTime!
-}
-type Business {
-    id:ID!
-    name:String!
-    location:String!
-    business_type_id: [BusinessType!]! @hasMany
-}
-type BusinessType{
-    id:Int!
-    name:String!
-    create_at:DateTime
-    updated_at:DateTime
-    businesses:Business @belongsTo(relation:"Business")
-
-}
-type BusinessImage{
-    id:ID!
-    path:String
-    business_id:[Business!]!
-    create_at:DateTime
-    updated_at:DateTime
-}
-type BusinessService{
-    id:ID!
-    business_id:[Business!]!
-    name:String!
-    description:String!
-    price:Int!
-    service_type_id:[BusinessServiceType!]!
-    duration:Int!
-    created_at:DateTime
-    updated_at:DateTime
-}
-type BusinessServiceType {
-    id:ID!
-    name:String!
-    created_at:DateTime
-    updated_at:DateTime
-}
-type BusinessServiceRating {
-    id:ID!
-    rating:Int!
-    service_id:[BusinessService]
-    customer_id:[Customer!]!
-    created_at: DateTime!
-    updated_at: DateTime!
-}
-type UserType{
-    id:ID!
-    name:String!
-    created_at: DateTime!
-    updated_at: DateTime!
-}
-type ServiceRatingDescription{
-    id:ID!
-    created_at: DateTime!
-    updated_at: DateTime!
-    business_service_rating_id:[BusinessServiceRating!]!
-    description:String!
-    rating_id:[BusinessServiceRating!]!
-
-}
-type BusinessOperatingHour{
-    dow:Int!
-    start_time:DateTime!
-    end_time:DateTime!
-    lunch_start_time:DateTime!
-    lunch_length:Int!
-    status:String!
-    business_id:[Business!]!
-}
-type Customer{
-    fname:String!
-    lname:String!
-    phone_number:String!
-    password:String!
-    email:String!
-    email_verified_at:DateTime
-    id:ID!
-    created_at: DateTime!
-    updated_at: DateTime!
-}
-enum ServiceBookingStatus{
-    ACCEPTED @enum(value:0)
-    PENDING @enum(value:1)
-    BOOKED @enum(value:2)
-    ARRIVED @enum(value:3)
-    FULFILLED @enum(value:4)
-    CANCELLED @enum(value:5)
-    NOSHOW @enum(value:6)
-    ENTEREDINERROR @enum(value :7)
-    CHECKEDIN @enum(value:8)
-}
-type ServiceBooking{
-    business_service_id:[BusinessService!]!
-    customer_id:[Customer!]!
-    has_paid:Boolean!
-    status:ServiceBookingStatus!
-    id:ID!
-    created_at: DateTime!
-    updated_at: DateTime!
-}
-type ServiceSlot{
-    slots_per_day:Int!
-    service_id:[BusinessService!]!
-    slots_per_session:Int!
-    id:ID!
-    created_at: DateTime!
-    updated_at: DateTime!
-}
-type ServiceSlotTracker{
-    service_id:[BusinessService!]!
-    total_slots:Int!
-    remaining_slots:Int!
-    id:ID!
-    created_at: DateTime!
-    updated_at: DateTime!
 }
 

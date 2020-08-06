@@ -21,6 +21,7 @@ class CreateCustomersTable extends Migration
             $table->text('password');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at');
+            $table->integer('location_id');
             $table->rememberToken();
             $table->timestamps();
         });

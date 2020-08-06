@@ -1,0 +1,151 @@
+type Business {
+    id:ID!
+    name:String!
+    location_id:[Location!]!
+    business_type_id: Int!
+    businessType:BusinessType @belongsTo(relation:"businessType")
+    user_id:Int!
+    owner:User @belongsTo
+    create_at:DateTime
+    updated_at:DateTime
+}
+type BusinessType{
+    id:Int!
+    businesses:[Business!]! @hasMany(relation:"businesses")
+    name:String!
+    create_at:DateTime
+    updated_at:DateTime
+
+}
+type BusinessImage{
+    id:ID!
+    path:String
+    business_id:[Business!]!
+    create_at:DateTime
+    updated_at:DateTime
+}
+type BusinessService{
+    id:ID!
+    business_id:[Business!]!
+    name:String!
+    description:String!
+    price:Int!
+    service_type_id:[BusinessServiceType!]!
+    duration:Int!
+    created_at:DateTime
+    updated_at:DateTime
+}
+type BusinessServiceType {
+    id:ID!
+    name:String!
+    created_at:DateTime
+    updated_at:DateTime
+}
+type BusinessServiceRating {
+    id:ID!
+    rating:Int!
+    service_id:[BusinessService]
+    customer_id:[Customer!]!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    user_type_id:Int!
+    type:UserType @belongsTo
+    password:String!
+    business:Business @hasOne
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+type UserType{
+    id:ID!
+    name:String!
+    users: [User] @hasMany
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+type Location{
+    id:ID!
+    name:String!
+    create_at:DateTime
+    updated_at:DateTime
+
+}
+
+
+type ServiceRatingDescription{
+    id:ID!
+    business_service_rating_id:[BusinessServiceRating!]!
+    description:String!
+    rating_id:[BusinessServiceRating!]!
+    created_at: DateTime!
+    updated_at: DateTime!
+
+}
+type BusinessOperatingHour{
+    id:ID!
+    dow:Int!
+    start_time:DateTime!
+    end_time:DateTime!
+    lunch_start_time:DateTime!
+    lunch_length:Int!
+    status:EOperatingHour!
+    business_id:[Business!]!
+    created_at:DateTime
+    updated_at:DateTime
+}
+type Customer{
+    id:ID!
+    fname:String!
+    lname:String!
+    phone_number:String!
+    password:String!
+    email:String!
+    email_verified_at:DateTime
+    location_id:Location!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+enum EOperatingHour {
+    OPEN
+    CLOSED
+}
+enum ServiceBookingStatus{
+    ACCEPTED
+    PENDING
+    BOOKED
+    ARRIVED
+    FULFILLED
+    CANCELLED
+    NOSHOW
+    ENTEREDINERROR
+    CHECKEDIN
+}
+type ServiceBooking{
+    id:ID!
+    business_service_id:[BusinessService!]!
+    customer_id:[Customer!]!
+    has_paid:Boolean!
+    status:ServiceBookingStatus!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+type ServiceSlot{
+    id:ID!
+    slots_per_day:Int!
+    service_id:[BusinessService!]!
+    slots_per_session:Int!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+type ServiceSlotTracker{
+    id:ID!
+    service_id:[BusinessService!]!
+    total_slots:Int!
+    remaining_slots:Int!
+    created_at: DateTime!
+    updated_at: DateTime!
+}

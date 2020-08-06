@@ -11,6 +11,7 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
+//    protected $guarded =[];
 
     /**
      * The attributes that are mass assignable.
@@ -40,6 +41,9 @@ class User extends Authenticatable
     ];
     public function type(): BelongsTo
     {
-        return $this->belongsTo(UserType::class,'id','type_id');
+        return $this->belongsTo(UserType::class,'user_type_id');
+    }
+    public function business():HasOne{
+        return $this->hasOne(Business::class);
     }
 }

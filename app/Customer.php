@@ -12,4 +12,7 @@ class Customer extends Model
     public function bookings():HasMany{
         return $this->hasMany(ServiceBooking::class,'service_id','id');
     }
+    public function location():BelongsTo{
+        return $this->belongsTo(Location::class,'id','location_id');
+    }
 }

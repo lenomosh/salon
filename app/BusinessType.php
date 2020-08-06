@@ -10,8 +10,8 @@ class BusinessType extends Model
 {
     //
     protected $guarded =[];
-    public function business(): HasMany
+    public function businesses(): HasMany
     {
-        return $this->hasMany(Business::class,'business_type','id');
+        return $this->hasMany(Business::class,'business_type_id','id');
     }
 }
