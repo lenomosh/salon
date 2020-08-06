@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import "./show.styles.scss"
+import "./massage.styles.scss"
 // import NavbarComponent from "../../LandingPage/Navbar/Navbar.component"
-const ServiceShow= () => {
+const ServiceMassage= () => {
     const [url, setUrl] = useState('htpp;//'+window.location.host+"/")
     return (
-        <div className="serviveshow">
+        <div className="servivesmassage">
             {/* <NavbarComponent/> */}
             <div className='braids'>
                 <div className='row'>
@@ -67,4 +67,4 @@ const ServiceShow= () => {
     )
 }
 
-export default ServiceShow
+export default ServiceMassage
