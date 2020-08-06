@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useMediaQuery } from '@material-ui/core';
-import { List, SimpleList,Filter, Datagrid,DateInput , TextField, ReferenceField, 
-    EditButton, Button,Edit,SimpleForm,ReferenceInput,TextInput,SelectInput,Create} from 'react-admin';
+import { List, SimpleList,Filter, Datagrid, TextField, ReferenceField, 
+    EditButton,Edit,SimpleForm,ReferenceInput,TextInput,SelectInput,Create} from 'react-admin';
 
 
 const PostFilter = (props) => (
@@ -32,17 +32,16 @@ export const PostList = (props) => {
                     </ReferenceField>
                     <TextField source="title" />
                     <TextField source="body" />
-                    <DateInput label="Publication date" source="published_at" defaultValue={new Date()} />
                     <EditButton />
                 </Datagrid>
             )}
         </List>
     );
 }
-
 const PostTitle = ({ record }) => {
         return <span>Post {record ? `"${record.title}"` : ''}</span>;
     };
+
 export const PostEdit = props => (
     <Edit title={<PostTitle />} {...props}>
         <SimpleForm>
@@ -67,3 +66,5 @@ export const PostCreate = props => (
         </SimpleForm>
     </Create>
 );
+
+
