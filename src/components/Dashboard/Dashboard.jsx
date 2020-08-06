@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import ShopImg from '../../imgs/profile/shop.jpg'
+import './Dashboard.styles.scss'
 
 const Dashboard=(props) =>{
   return (
@@ -98,7 +99,7 @@ const Dashboard=(props) =>{
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-6 col-md-12">
+            <div className="col-12">
               <Link to="/vendor-home/shop-profile" className="card card-profile">
                 <div className="card-avatar">
                     <img className="img" src={ShopImg} />
