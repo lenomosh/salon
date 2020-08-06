@@ -7,20 +7,6 @@ const ServicesPage = () => {
     // console.log (arr)
     return (
         <div className="servicesPage">
-            <div className='location'>
-                <h1><span className='pop'>LOCATION</span></h1>
-                <p>Your are required to input you current loacation so that we can locate spas around you </p>
-                <form action="location">
-                    <div className='raw'>
-                        <div classNameName="form-wrapper">
-                            <div classNameName="form-group">
-                                <input type="location" className='col-md-4' className="form-control" placeholder="input location"/>
-                                <a href="#" className="btn btn-purple btn-md active" clarole="button" id='button'>Submit</a>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
             <div className="intro">
                 <h1><span className='pop'>Popular </span> <span className='pro'>Procedures</span> </h1>
                 <p>Where beauty is a illumination of your soul </p>
@@ -29,22 +15,39 @@ const ServicesPage = () => {
                <nav>
                    <ul className="nav-links">
                         <li>
-                            <a href="#">Hair</a>
-                            <ul id="nav-links">
-                                <li>
-                                    <a href="#">braiding</a>
-                                </li>
-                                <li>
-                                    <a href="#">weaving</a>
-                                </li>
-                                <li>
-                                    <a href="#">wash and setting</a>
-                                </li>
-                                <li>
-                                    <a href="#">hair dye</a>
-                                </li>
-                            </ul>
+                            <Link to="services/show" classNameName="btn btn-purple btn-lg active" >Hair</Link >
+                                <ul id="nav-links">
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >braiding</Link >
+                                    </li>
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >weaving</Link >
+                                    </li>
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >blowdry</Link >
+                                    </li>
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >dreadlocks</Link >
+                                    </li>
+                                </ul>
                         </li>
+                        <li>
+                            <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >Barbershop</Link >
+                                <ul id="nav-links">
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >fade</Link >
+                                    </li>
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >line up afro</Link >
+                                    </li>
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >wave</Link >
+                                    </li>
+                                    <li>
+                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >cleanshave</Link >
+                                    </li>
+                                </ul>
+                        </li>            
                         <li>
                             <a href="#">Massage</a>
                             <ul id="nav-links">
@@ -123,30 +126,16 @@ const ServicesPage = () => {
                         <div className="line1"></div>
                     </div>
                 </nav>
-            </div>
-        </div>
-    )
-}
-export default ServicesPage
-/* 
-            <div classNameName="Services"></div>
-                <p>Select service that you are interested in.</p>
-                <div classNameName="row">
-                    {state.map( element=> 
-                        <div classNameName="col-md-4" id="hair">
-                            <img src="images/services/hair.gif" alt=""/>
-                            <Link to="services/show" classNameName="btn btn-purple btn-lg active" >Hair</Link >
-                        </div>
-                    )}
-                   
-                    <div classNameName="col-md-4" id="hair">
-                        <img src="images/services/mens.jpg" alt=""/>
-            
-
-                    </div>
-                    <div classNameName="col-md-4" id="hair">
-                        <img src="images/services/hairremoval.gif" alt=""/>
-                        <h2>Hair Removal</h2>
+                <div className='services'>
+                    <h6>we offer the following services on hair.choose the services to book</h6>
+                    <div className='raw'>
+                        <div className='hairs'>
+                           
+                                
+                                
+                              
+                                
+                              
                     </div>
                 </div>
                 <div classNameName="row">
@@ -162,5 +151,47 @@ export default ServicesPage
                         <img src="images/services/facial.gif" alt=""/>
                         <h2>Face</h2>
                     </div>
+                    <div classNameName="col-md-4" id="hair">
+                        <img src="images/services/facial.gif" alt=""/>
+                        <div classNameName="col-md-4" id="hair">
+                        <img src="images/services/facial.gif" alt=""/>
+                        <h2>Face</h2>
+                    </div>
+                    </div>
+                    </div>
+
                 </div>
-            </div>*/
+                       
+            </div>
+            <div className='location'>
+                <h1><span className='pop'>LOCATION</span></h1>
+                <p>Your are required to input you current loacation so that we can locate spas around you </p>
+                <form action="location">
+                    <div className='raw'>
+                        <div classNameName="form-wrapper">
+                            <div classNameName="form-group">
+                                <input type="location" className='col-md-4' className="form-control" placeholder="input location"/>
+                                <a href="#" className="btn btn-purple btn-md active" clarole="button" id='button'>Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    )
+}
+export default ServicesPage
+{/* 
+            <div classNameName="Services"></div>
+                <p>Select service that you are interested in.</p>
+                <div classNameName="row">
+                    {state.map( element=> 
+                        <div classNameName="col-md-4" id="hair">
+                           
+                            <Link to="services/show" classNameName="btn btn-purple btn-lg active" >Hair</Link >
+                        </div>
+                    )}
+                   
+                   
+                </div>
+            </div>*/}

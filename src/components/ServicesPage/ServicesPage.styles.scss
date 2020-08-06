@@ -32,7 +32,7 @@
         width: 200px;
         height: 40px;
         line-height: 40px;
-        opacity: .8;
+        
         text-align: center;
         font-size: 20px;
         color: purple;
@@ -109,12 +109,18 @@
    .services{
        text-align: center;
    }
-    background-image: url(https://st.depositphotos.com/1007388/2516/i/950/depositphotos_25163561-stock-photo-pink-grunge-texture-or-background.jpg);
+   .h6{
+       text-align: center;
+       font-weight: bold;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-size: 20px;
+   }
+    background-image: url(https://i.pinimg.com/originals/3d/55/bd/3d55bd9974f2d99c61ad802645445607.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+
     @media screen  and (max-width: width 1080px){
         display: none;
         .nav-links{
