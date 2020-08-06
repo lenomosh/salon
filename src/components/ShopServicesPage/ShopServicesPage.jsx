@@ -27,15 +27,20 @@ const HairService=(props)=>{
       <p className="duration">
         5hrs
       </p>
+      
       <div className="stats ml-auto">
-        <i className="material-icons">edit</i>
-        <i className="material-icons">delete</i>
+        <button class="btn btn-round" data-toggle="modal" data-target="#editservice">
+          <i className="material-icons">edit</i>
+        </button>
+        <button class="btn btn-round"id="delete-service">
+          <i className="material-icons">delete</i>
+        </button>  
       </div>
     </div>
   </div>
     )
   }
-  const NairService=(props)=>{
+  const NailService=(props)=>{
     return(
       <div className="card card-blog nail-service col-md-6">
         <div className="card-header card-header-image">
@@ -208,6 +213,58 @@ const WaxingService=(props)=>{
   )
 }
 
+const EditService=(props)=>{
+  return(
+    <div class="modal fade" id="editservice" tabindex="-1" role="">
+      <div class="modal-dialog modal-login" role="document">
+          <div class="modal-content">
+            <div class="card card-signup card-plain">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                  <i class="material-icons">clear</i>
+                </button>
+                <form class="form" id="edit-service-form" method="" action="">
+                  <p class="description text-center">Service name</p>
+                  <div class="card-body">
+                    <div class="form-group bmd-form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="material-icons">money</i></div>
+                        </div>
+                        <input type="number" id="edit-service-price" class="form-control" placeholder="Price..."/>
+                      </div>
+                    </div>
+
+                    <div class="form-group bmd-form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="material-icons">date_range</i></div>
+                        </div>
+                        <input type="text" id="edit-service-dur" class="form-control" placeholder="Duration..."/>
+                      </div>
+                    </div>
+
+                    <div class="form-group bmd-form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="material-icons">description</i></div>
+                        </div>
+                        <textarea className="form-control" rows={5} defaultValue={""} id="edit-service-description" placeholder="Service description"/>
+                      </div>
+                      </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Update</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  )
+}
+
 
 
 const ShopServices=(props)=> {
@@ -215,13 +272,15 @@ const ShopServices=(props)=> {
     <div className="shop-services-page pt-4">
       <div className="row"  id="services">
         <HairService/>
-        <NairService/>
+        <NailService/>
         <MassageService/>
         <SpaService/>
         <BarberService/>
         <BrowsService/>
         <WaxingService/>
+        <EditService/>
        </div>
+       
     </div>
   );
 }
