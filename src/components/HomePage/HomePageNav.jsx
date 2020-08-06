@@ -12,7 +12,6 @@ const HomePageNav=(props)=> {
                   </a>
           </div>
         <div className="logo">
-       
           <span className="simple-text logo-normal shop-name">Shop Name</span>
         </div>
         <div className="sidebar-wrapper">

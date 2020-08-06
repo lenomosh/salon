@@ -82,7 +82,7 @@ const ShopProfilePage=(props)=> {
                 </div>
                 <div className="card-body">
                   <h6 className="card-category text-gray">About</h6>
-                  <h4 className="card-title" id="shop-name-title">Alec Thompson</h4>
+                  <h4 className="card-title" id="shop-name-title">Shop Name</h4>
                   <p className="card-description" id="shop-abt-desc">
                     Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
                   </p>
