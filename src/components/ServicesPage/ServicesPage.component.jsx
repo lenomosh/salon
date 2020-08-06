@@ -35,34 +35,31 @@ const ServicesPage = () => {
                             <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >Barbershop</Link >
                                 <ul id="nav-links">
                                     <li>
-                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >fade</Link >
+                                        <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >fade</Link >
                                     </li>
                                     <li>
-                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >line up afro</Link >
+                                        <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >line up afro</Link >
                                     </li>
                                     <li>
-                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >wave</Link >
+                                        <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >wave</Link >
                                     </li>
                                     <li>
-                                        <Link to="services/show" classNameName="btn btn-purple btn-lg active" >cleanshave</Link >
+                                        <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >cleanshave</Link >
                                     </li>
                                 </ul>
                         </li>            
                         <li>
-                            <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >Massage</Link >
+                            <Link to="services/massage" classNameName="btn btn-purple btn-lg active" >Massage</Link >
                             <ul id="nav-links">
                                 <li>
-                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" >hotstone</Link >
+                                    <Link to="services/massage" classNameName="btn btn-purple btn-lg active" >hotstone</Link >
                                 </li>
                                 <li>
-                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" > deep tissue</Link >
+                                    <Link to="services/massage" classNameName="btn btn-purple btn-lg active" > deep tissue</Link >
                                 </li>
                                 <li>
-                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" >body scrub</Link >
-                                </li>
-                                <li>
-                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" >cleanshave</Link >
-                                </li>                              
+                                    <Link to="services/massage" classNameName="btn btn-purple btn-lg active" >body scrub</Link >
+                                </li>                         
                             </ul>
                         </li>
                     </ul>

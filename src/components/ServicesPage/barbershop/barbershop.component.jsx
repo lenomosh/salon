@@ -4,9 +4,9 @@ const ServiceBarbershop= () => {
     return (
         <div className="servivesbarbershop">
             <div className='fade'>
-                <div className='raw'>
+                <div className='row'>
                     <div className='col-md-4'>
-                        <img src="images/services/mens.jpg" alt=""/>
+                        <img src="https://coolmenshair.com/wp-content/uploads/fade-haircuts-for-black-boys-11.jpg" alt=""/>
                     </div>
                     <div className='col-md-4'>
                         <h4>A fade is how your barber cuts your hair on the sides and back with professional barber clippers.</h4>
@@ -18,9 +18,9 @@ const ServiceBarbershop= () => {
                 </div>
             </div>
             <div className='clean shave'>
-                <div className='raw'>
+                <div className='row'>
                     <div className='col-md-4'>
-                        <img src="images/services/cleanshave" alt=""/>
+                        <img src="https://i.pinimg.com/originals/6f/67/7f/6f677f3496761851a61a74acb6e4cdcb.jpg" alt=""/>
                     </div>
                     <div className='col-md-4'>
                        <h4>Clean shave is a style where you get ur hair and beard completely cut</h4>
@@ -31,9 +31,9 @@ const ServiceBarbershop= () => {
                 </div>
             </div>
             <div className='Lineup'>
-                <div className='raw'>
+                <div className='row'>
                     <div className='col-md-4'>
-                        <img src="images/services/Line-Up-Afro.png" alt=""/>
+                        <img src="https://media.haircutinspiration.com/photos/20181204013032/Mid-skin-afro-with-line-up-3-e1536751717459.jpg" alt=""/>
                     </div>
                     <div className='col-md-4'>
                         <h4>hairstyle that involves cutting along the ... In the 1980s, feeling that the afro looked dated, people began to cut their afros off in search of something more clean and neat</h4>
@@ -44,9 +44,9 @@ const ServiceBarbershop= () => {
                 </div>
             </div>
             <div className='wave'>
-                <div className='raw'>
+                <div className='row'>
                     <div className='col-md-4'>
-                        <img src="images/services/wave.png" alt=""/>
+                        <img src="https://i.pinimg.com/originals/43/33/07/43330757720645636cd149379e5238cf.jpg" alt=""/>
                     </div>
                     <div className='col-md-4'>
                         <h4>Modern and bold, a bald fade with waves is great if you want a very short haircut.</h4>
