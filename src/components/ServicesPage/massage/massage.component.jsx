@@ -6,28 +6,28 @@ const ServiceMassage= () => {
     return (
         <div className="servivesmassage">
             {/* <NavbarComponent/> */}
-            <div className='braids'>
+            <div className='Hotstonemassage'>
                 <div className='row'>
                     <div className='col-md-4'>
-                        <img src="http://localhost:3000/images/services/hair.gif" alt=""/>
+                        <img src="http://localhost:3000/images/services/message.png" alt=""/>
                     </div>
                     <div className='col-md-4'>
-                        <h4>Braiding your hair can help to make it grow faster by providing it with a more stable structure.</h4>
-                        <h4> The style can also protect your hair from daily contact with textiles and objects that may cause additional friction, which can lead to breakage.</h4>
+                        <h4>Hot stone massage therapy helps melt away tension, ease muscle stiffness, and increase circulation and metabolism.</h4>
+                        <h4> Hot stones, when coupled with massage, also help to expand blood vessels, which encourages blood flow throughout the body.</h4>
                     </div>
                     <div className='col-md-4'>
                         <a href="#" class="btn btn-pruple btn-lg active" role="button">SELECT</a>
                     </div>
                 </div>
             </div>
-            <div className='weave'>
+            <div className='deeptissue'>
                 <div className='row'>
                     <div className='col-md-4'>
-                        <img src="http://localhost:3000/images/services/straightening.gif" alt=""/>
+                        <img src="http://localhost:3000/images/services/deeptissue" alt=""/>
                     </div>
                     <div className='col-md-4'>
-                        <h4>Hair weaving is the quickest technique that you can apply to get back hairs on your receding hairline instantly. </h4>
-                        <h4>This fast method also ensures that the hair stays on your head for more than just a few weeks.</h4>
+                        <h4>Deep tissue massage is a massage technique that’s mainly used to treat musculoskeletal issues, such as strains and sports injuries.</h4>
+                        <h4> It involves applying sustained pressure using slow, deep strokes to target the inner layers of your muscles and connective tissues. This helps to break up scar tissue that forms following an injury and reduce tension in muscle and tissue.</h4>
                     </div> 
                     <div className='col-md-4'>
                         <a href="#" className="btn btn-purple btn-lg active" clarole="button" id='button'>Select</a>

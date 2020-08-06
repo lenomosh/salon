@@ -49,63 +49,20 @@ const ServicesPage = () => {
                                 </ul>
                         </li>            
                         <li>
-                            <a href="#">Massage</a>
+                            <Link to="services/barbershop" classNameName="btn btn-purple btn-lg active" >Massage</Link >
                             <ul id="nav-links">
                                 <li>
-                                    <a href="#">Hotstone</a>
+                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" >hotstone</Link >
                                 </li>
                                 <li>
-                                    <a href="#">DeepTissue</a>
+                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" > deep tissue</Link >
                                 </li>
                                 <li>
-                                    <a href="#">Sweedish</a>
+                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" >body scrub</Link >
                                 </li>
                                 <li>
-                                    <a href="#">Aroma therapy</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Nails</a>
-                            <ul id="nav-links">
-                                <li>
-                                    <a href="#">acyrlic</a>
-                                </li>
-                                <li>
-                                    <a href="#">pedicure</a>
-                                </li>
-                                <li>
-                                    <a href="#">manicure</a>
-                                </li>
-                                <li>
-                                    <a href="#">nailpolish</a>
-                                </li>
-                                <li>
-                                    <a href="#">Nail/Gel removal </a>
-                                </li>
-                                <li>
-                                    <a href="#">Stickons or Tips</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Skin</a>
-                            <ul id="nav-links">
-                                <li>
-                                    <a href="#">facial</a>
-                                </li>
-                                <li>
-                                    <a href="#">make up</a>
-                                </li>
-                                <li>
-                                    <a href="#">Body Scrub</a>
-                                </li>
-                                <li>
-                                    <a href="#">Electrotherapy</a>
-                                </li>
-                                <li>
-                                    <a href="#">hair removal</a>
-                                </li>
+                                    <Link to="services/show" classNameName="btn btn-purple btn-lg active" >cleanshave</Link >
+                                </li>                              
                             </ul>
                         </li>
                     </ul>
