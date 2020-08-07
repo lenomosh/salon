@@ -11,7 +11,7 @@ class BusinessService extends Model
 {
     protected $guarded =[];
     public function type():BelongsTo{
-        return $this->belongsTo(BusinessServiceType::class,'id','type_id');
+        return $this->belongsTo(BusinessServiceType::class,'service_type_id');
     }
     public function ratings():HasMany{
         return $this->hasMany(BusinessServiceRating::class,'service_id','id');
@@ -21,5 +21,8 @@ class BusinessService extends Model
     }
     public function slotsTracker():HasMany{
         return $this->hasMany(ServiceSlotTracker::class,'service_id','id');
+    }
+    public function business():BelongsTo{
+        return $this->belongsTo(Business::class);
     }
 }

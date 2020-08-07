@@ -9,6 +9,8 @@ type Query {
     businesses:[Business!]! @all
     businessTypes:[BusinessType!]! @all
     locations:[Location!]! @all
+    businessServiceTypes:[BusinessServiceType] @all
+    businessServices:[BusinessService]@all
 
 }
 extend type Query{
@@ -49,6 +51,7 @@ type Mutation{
         service_type_id:Int!,
         duration:Int!
     ):BusinessService @create
+    createLocation(name:String!):Location @create
 
 
     createBusinessServiceType(name:String!):BusinessServiceType @create

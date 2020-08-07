@@ -13,9 +13,9 @@ class Business extends Model
     /**
      * @return BelongsTo
      */
-    public function businessType(): BelongsTo
+    public function type(): BelongsTo
     {
-        return $this->belongsTo(BusinessType::class);
+        return $this->belongsTo(BusinessType::class,"business_type_id");
 }
 public function images(): HasMany
 {
@@ -28,6 +28,9 @@ public function owner():BelongsTo{
         return $this->belongsTo(User::class,'user_id');
 }
 public function location():BelongsTo{
-        return  $this->belongsTo(Location::class,'id','location_id');
+        return  $this->belongsTo(Location::class,'location_id');
+}
+public function services():HasMany{
+        return $this->hasMany(BusinessService::class);
 }
 }

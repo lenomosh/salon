@@ -12,6 +12,6 @@ class Location extends Model
         return $this->hasMany(Customer::class,'location_id','id');
     }
     public function businesses():HasMany{
-        return $this->hasMany(Business::class,'location_id','id');
+        return $this->hasMany(Business::class,'location_id');
     }
 }
